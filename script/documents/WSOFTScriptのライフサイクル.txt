@@ -1,0 +1,21 @@
+﻿WSOFTScriptは、次のライフサイクルポリシーに従います。
+
+このポリシーは、次のソフトウェアに適用されます:WSOFTScript、WSOFTScript.X、WSOFTScript.Shangrila、WSOFTScript Pocket 
+このポリシーは、次のバージョンに適用されます:0.07R3-0.07R4、2020LTS
+(WSOFTScript0.07R2以前のバージョンのサポートはすでに終了しています。)
+
+<div class="alert alert-success" role="alert">
+WSOFTScriptバージョン2020LTS及び0.07R4以降、新たなバージョンのWSOFTScriptの開発は行われません。WSOFTは、2022年6月1日に、全てのWSOFTScriptおよびWSOFTScript.XならびにWSOFTScript.Pocketの各バージョンのサポートを終了します。
+</div>
+
+<font size="6.5em">WSOFTScript 2020 LTS は、サポートを終了しました。</font>
+<ul>
+  <li>WSOFTScriptのすべてのバージョンのサポートはすでに終了しました。</li>
+  <li>WSOFTUpdateでWSOFTScriptの更新をダウンロードすることはできなくなりません。</li>
+  <li>package_load、package_install関数は使用できなくなります。これは、WSOFTのサーバーがパッケージの配信をこの日に停止するからです。</li>
+</ul>
+
+<h4>少なくともWSOFTScriptのサポートが終了してから30日後まで、このサイトでWSOFTScriptに関する情報を公開します。</h4>
+<h4>WSOFTは、WSOFTScriptの代替手段として、<a href="https://alice.wsoft.ws/">AliceScript</a>を使用することを推奨しています。AliceScriptは、WSOFTScriptの欠点を補った新しいプログラミング言語です。AliceScriptに移行するための詳しい情報は、<a href="https://alice.wsoft.ws/index.php?title=WSOFTScript%E3%81%8B%E3%82%89%E3%81%AE%E7%A7%BB%E8%A1%8C">AliceScriptWiki:チュートリアル:WSOFTScriptからの移行</a>を参照してください。</h4>
+
+<h4>2年もの間、WSOFTScriptをご利用いただき、ありがとうございました。</h4>
