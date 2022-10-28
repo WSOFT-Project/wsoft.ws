@@ -3,39 +3,19 @@
 <head>
 	<title>マインスイーパー</title>
 	<meta charset="utf-8">
-	
 	<link rel="stylesheet" media="screen" type="text/css" href="css/styles.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'>
-
-	<?php
-		$id=$_COOKIE['id'];
-		$dsp="";
-		if($id){
-			$dsp="アカウントの切り替え";
-		}else{
-			$dsp="ログイン";
-		}
-		$src="var username=\"".$id."\"";
-	?>
-
-	<script>
-		<?=$src?>
- 	</script>
-	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	
 	<script type="text/javascript" src="js/mine.js"></script>
 	
 </head>
-
 <body>
+	<script src="https://wsoft.ws/main.js"></script>
 	<div class="container">
 		<header class="row">
 			<div class="sixcol">
 			<h1>マインスイーパーのような何か</h1>
-			</div>
-			<div class="sixcol last">
-				<h4><?=$id?></h4><p><a href="../login?url=mine%2Findex.php"><?=$dsp?></a></p>
 			</div>
 		</header>
 		<section class="row">
