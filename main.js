@@ -10,7 +10,7 @@ function setLegalLink(url,text) {
 }
 var g_scr= document.createElement('script');
 g_scr.src = "https://www.googletagmanager.com/gtag/js?id=G-CC7YD76SL7";
-document.head.appendChild(script);
+document.head.appendChild(g_scr);
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
