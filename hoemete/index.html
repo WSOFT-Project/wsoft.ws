@@ -1,0 +1,43 @@
+<html lang="ja">
+    <head>
+        <script>
+            //ほめ言葉の配列です。ここに','区切りで'"'で囲むことで追加できます
+            var hoemekotoba =  ["生きててえらい","ほめられててえらい","いつもがんばっててえらい"];
+        </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="とりあえずほめられておきたいあなたに。">
+    <link rel="icon" href="https://wsoft.ws/favicon.svg" type="image/svg+xml">
+    <link rel="icon alternate" href="https://wsoft.ws/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" type="text/javascript"></script>
+    
+    <title>ほめて.ws</title>
+    <meta name="description" content="とりあえずほめられておきたいあなたに。">
+    
+    <meta property="og:site_name" content="WSOFT">
+    <meta property="og:url" content="https://wsoft.ws/homete">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WSOFT">
+    <meta property="og:description" content="とりあえずほめられておきたいあなたに。">
+    <meta property="og:image" content="favicon.svg">
+    <meta property="og:locale" content="ja_JP">
+    
+    <meta name="twitter:card" content="favicon.svg">
+    <meta name="twitter:site" content="@WSOFT7">
+    <meta name="twitter:description" content="とりあえずほめられておきたいあなたに。">
+    <meta name="twitter:image:src" content="favicon.svg">
+    </head>
+    <body>
+        <div class="container">
+    <main role="main" class="pb-3">
+    
+        <h1 class="text-center" id="homete">ほめて.ws</h1>
+    </main>
+    </div>
+    <script>
+    document.getElementById("homete").innerText = hoemekotoba[Math.floor(Math.random() * hoemekotoba.length)];
+    </script>
+    <script src="https://wsoft.ws/main.js"></script> 
+</body></html>
