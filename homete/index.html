@@ -1,11 +1,5 @@
 <html lang="ja">
     <head>
-        <script>
-            /// アテンション！！！！！！
-            /// ほめ言葉の配列です。ここに','区切りで'"'で囲むことで追加できます
-            /// 具体的には]の一文字前に[,"{新しい言葉}"]を追加してください
-            var hoemekotoba =  ["生きててえらい","ほめられててえらい","いつもがんばっててえらい","一緒にいるとすごく落ち着く"];
-        </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="とりあえずほめられておきたいあなたに。">
@@ -18,7 +12,7 @@
     <title>ほめて.ws</title>
     <meta name="description" content="とりあえずほめられておきたいあなたに。">
     
-    <meta property="og:site_name" content="WSOFT">
+    <meta property="og:site_name" content="ほめて.ws">
     <meta property="og:url" content="https://wsoft.ws/homete">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WSOFT">
@@ -32,27 +26,30 @@
     <meta name="twitter:image:src" content="favicon.svg">
     </head>
     <body>
-        <div class="container">
+    <div class="container">
     <main role="main" class="pb-3">
-    
         <h1 class="text-center p-5" id="homete">ほめて.ws</h1>
         <div class="container">
-  <div class="row">
-    <div class="col">
-        <a href="https://wsoft.ws/homete" class="btn btn-primary"><i class="bi bi-arrow-left-right"></i>&nbsp;ほかの言葉</a>
-    </div>
-    <div class="col">
-        <a href="https://github.com/WSOFT-Project/wsoft.ws/blob/main/homete/index.html" class="btn btn-secondary"><i class="bi bi-github"></i>&nbsp;ほめ言葉を編集する</a>
-    </div>
-    <div class="col">
-        <a href="https://docs.wsoft.ws/contribute/" class="btn btn-secondary"><i class="bi bi-pencil"></i>&nbsp;編集の仕方ガイドを見る</a>
-    </div>
-  </div>
-</div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a onclick="location.reload();" class="nav-link"><i class="bi bi-arrow-left-right"></i>&nbsp;ほかの言葉</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/WSOFT-Project/wsoft.ws/blob/main/homete/homekotoba.json" class="nav-link"><i class="bi bi-github"></i>&nbsp;ほめ言葉を投稿する</a>
+                </li>
+              </ul>
+        </div>
     </main>
     </div>
     <script>
-    document.getElementById("homete").innerText = hoemekotoba[Math.floor(Math.random() * hoemekotoba.length)];
+        let requestURL = 'http://server.local.wsoft.ws/homekotoba.json';
+        let request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+        document.getElementById("homete").innerText = request.response[Math.floor(Math.random() * request.response.length)];
+        }
     </script>
     <script src="https://wsoft.ws/main.js"></script> 
 </body></html>
