@@ -24,6 +24,19 @@
     <meta name="twitter:site" content="@WSOFT7">
     <meta name="twitter:description" content="とりあえずほめられておきたいあなたに。">
     <meta name="twitter:image:src" content="favicon.svg">
+
+    
+    <script>
+        let requestURL = 'https://wsoft.ws/homete/homekotoba.json';
+        let request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+        document.getElementById("homete").innerText = request.response[Math.floor(Math.random() * request.response.length)];
+        }
+    </script>
+    <script src="https://wsoft.ws/main.js"></script> 
     </head>
     <body>
     <div class="container">
@@ -44,15 +57,4 @@
         </div>
     </main>
     </div>
-    <script>
-        let requestURL = 'https://wsoft.ws/homete/homekotoba.json';
-        let request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
-        request.onload = function() {
-        document.getElementById("homete").innerText = request.response[Math.floor(Math.random() * request.response.length)];
-        }
-    </script>
-    <script src="https://wsoft.ws/main.js"></script> 
 </body></html>
