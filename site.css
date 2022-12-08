@@ -17,3 +17,10 @@
         color:0066CC;
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+    img {
+      filter: saturate(70%) brightness(80%);
+      background: #ccc;
+    }
+  }
