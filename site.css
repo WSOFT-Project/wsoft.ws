@@ -1,9 +1,5 @@
-.alert a{
+a{
     text-decoration: none;
-}
-
-.alert a:hover{
-    text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
