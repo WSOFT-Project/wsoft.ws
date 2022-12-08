@@ -10,12 +10,6 @@
     a{
         color:385898;
     }
-    img {
-        filter: saturate(70%) brightness(80%);
-      }
-    .img-white img{
-        background: #ccc;
-    }
   }
   
   @media (prefers-color-scheme: light) {
