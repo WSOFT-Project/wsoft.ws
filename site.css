@@ -10,17 +10,16 @@
     a{
         color:385898;
     }
+    img {
+        filter: saturate(70%) brightness(80%);
+      }
+    .img-white img{
+        background: #ccc;
+    }
   }
   
   @media (prefers-color-scheme: light) {
     a{
         color:0066CC;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    img {
-      filter: saturate(70%) brightness(80%);
-      background: #ccc;
     }
   }
