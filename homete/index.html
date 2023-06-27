@@ -28,6 +28,7 @@
     <body>
     <div class="container">
     <main role="main" class="pb-3">
+        <common vendor="wsoft" type="header"></common>
         <h1 class="text-center p-5" id="homete">ほめて.ws</h1>
         <div class="container">
             <ul class="nav justify-content-center">
@@ -42,6 +43,7 @@
                 </li>
               </ul>
         </div>
+        <common vendor="wsoft" type="footer"></common>
     </main>
     </div>
     <script>
@@ -54,5 +56,5 @@
         document.getElementById("homete").innerText = request.response[Math.floor(Math.random() * request.response.length)];
         }
     </script>
-    <script src="https://wsoft.ws/main.js"></script> 
+    
 </body></html>
