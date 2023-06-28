@@ -26,9 +26,9 @@
     <meta name="twitter:image:src" content="favicon.svg">
     </head>
     <body>
+        <common-header/>
     <div class="container">
     <main role="main" class="pb-3">
-        <common-header/>
         <h1 class="text-center p-5" id="homete">ほめて.ws</h1>
         <div class="container">
             <ul class="nav justify-content-center">
@@ -43,8 +43,6 @@
                 </li>
               </ul>
         </div>
-        <common-footer/>
-              <common-modal/>
     </main>
     </div>
     <script>
@@ -57,4 +55,6 @@
         document.getElementById("homete").innerText = request.response[Math.floor(Math.random() * request.response.length)];
         }
     </script>
+        <common-footer/>
+              <common-modal/>
 </body></html>
