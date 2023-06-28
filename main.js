@@ -1,5 +1,5 @@
-document.querySelector('body').insertAdjacentHTML('afterbegin','<common-header/>');
-document.querySelector('body').insertAdjacentHTML('beforeend', '<common-footer/>');
+document.querySelector('body').insertAdjacentHTML('afterbegin',String.raw`<common-header/>`);
+document.querySelector('body').insertAdjacentHTML('beforeend', String.raw`<common-footer/>`);
 function setLegalLink(url) {
     document.getElementById('legal-link').setAttribute('href', url);
 }
