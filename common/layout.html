@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   
-    <title>WSOFT</title>
-
     <common class="head">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,10 +19,10 @@
         <link rel="icon alternate" href="https://wsoft.ws/favicon.ico">
         <meta name="description" content="模型部の手下となりしプログラマー、たいと愉快な仲間たちの同人サークル。ソフト開発や動画制作をしたりしている。" >
         <!-- ogp -->
-        <meta property="og:site_name" content="WSOFT" />
+        <meta property="og:site_name" content="@title" />
         <meta property="og:url" content="https://wsoft.ws" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="WSOFT" />
+        <meta property="og:title" content="@title" />
         <meta property="og:description" content="模型部の手下となりしプログラマー、たいと愉快な仲間たちの同人サークル。ソフト開発や動画制作をしたりしている。" />
         <meta property="og:image" content="favicon.svg" />
         <meta property="og:locale" content="ja_JP" />
@@ -33,23 +31,27 @@
         <meta name="twitter:site" content="@WSOFT7" />
         <meta name="twitter:description" content="模型部の手下となりしプログラマー、たいと愉快な仲間たちの同人サークル。ソフト開発や動画制作をしたりしている。" />
         <meta name="twitter:image:src" content="favicon.svg" />
+
+        <title>@title</title>
     </common>
 
     <!-- これはレイアウトファイルです -->
     <common role="layout"/>
+    <common role="config">
+        <meta name="ignore">*.git*</meta>
+    </common>
 </head>
 <body>
   <common class="header">
-    <header>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <a class="navbar-brand  unnewtab" href="https://wsoft.ws/">
                         <img src="https://wsoft.ws/favicon.svg" alt="WSOFT"  width="30" class="d-inline-block align-text-top" style="width:30px;" />&nbsp;WSOFT
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-navbar" aria-controls="nav-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <a href="#" class="d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </a>
                     <div class="collapse navbar-collapse" id="nav-navbar">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -90,6 +92,7 @@
                 </div>
             </nav>
             </header>
+            
             <script>
             function setLegalLink(url) {
                 document.getElementById('legal-link').setAttribute('href', url);
@@ -100,8 +103,41 @@
                 a.innerHTML=text;
             }
             </script>
-    </header>
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">
+                    <img src="https://wsoft.ws/favicon.svg" alt="WSOFT"  width="30" class="d-inline-block align-text-top" style="width:30px;" />&nbsp;WSOFT
+                  </h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <h4><a id="nav-home" class="text-body unnewtab" aria-current="page" href="https://wsoft.ws/">Home</a></h4>
+                    <h4><a id="nav-about" class="text-body unnewtab" href="https://wsoft.ws/About">About</a></h4>
+                    <h4><a id="nav-works" class="text-body unnewtab" href="https://wsoft.ws/Works">Works</a></h4>
+                    <h4><a id="nav-docs" class="text-body unnewtab" aria-current="page" href="https://docs.wsoft.ws/">Docs</a></h4>
+                    <h4><a id="nav-downloads" class="text-body unnewtab" href="https://download.wsoft.ws">Download</a></h4>
+                    <h4><a id="nav-contact" class="text-body unnewtab" href="https://wsoft.ws/Contact">Contact</a></h4>
+                    <hr/>
+                    <a class="text-body unnewtab" href="https://github.com/WSOFT-Project">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <span class="navbar-text">&nbsp;&nbsp;</span>
+                    <a class="text-body unnewtab" href="https://twitter.com/WSOFT7">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <span class="navbar-text">&nbsp;&nbsp;</span>
+                    <a class="text-body unnewtab" href="https://a.wsoft.ws/discord">
+                        <i class="bi bi-discord"></i>
+                    </a>
+                    <span class="navbar-text">&nbsp;&nbsp;</span>
+                    <a class="text-body unnewtab" href="https://a.wsoft.ws/youtube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
   </common>
+
     <div class="container">
         <main role="main" class="pb-3">
           <p>これはレイアウトファイルです</p>
@@ -110,6 +146,43 @@
         <br/>
     </div>
    
+    <common class="news-card-icon">
+        <div class="card mb-3">
+            <a href="@href" class="row g-0 text-reset text-decoration-none">
+              <div class="col-md-3 d-flex justify-content-center">
+                <i class="bi @icon" style="font-size: 700%;"></i>
+              </div>
+              <div class="col-md">
+                <div class="card-body">
+                  <h5 class="card-title">@title</h5>
+                  <div class="card-text">
+                     <p>@description</p>
+                  </div>
+                  <p class="card-text"><small class="text-muted">@date</small></p>
+                </div>
+              </div>
+            </a>
+          </div>
+    </common>
+    <common class="news-card-image">
+        <div class="card mb-3">
+            <a href="@href" class="row g-0 text-reset text-decoration-none">
+              <div class="col-md-3 d-flex justify-content-center">
+                <img src="@src" width="100%" height="100%" alt="@title">
+              </div>
+              <div class="col-md">
+                <div class="card-body">
+                  <h5 class="card-title">@title</h5>
+                  <div class="card-text">
+                     <p>@description</p>
+                  </div>
+                  <p class="card-text"><small class="text-muted">@date</small></p>
+                </div>
+              </div>
+            </a>
+          </div>
+    </common>
+
     <common class="modal">
         <div class="modal fade" id="wsoft-custom-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -121,7 +194,7 @@
                                      alt="WSOFTロゴ" /> WSOFTについて
                         </h5>
         
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" meta-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                      <p>Copyright &copy; 2017 WSOFT All Rights Reserved.</p>
@@ -131,7 +204,7 @@
                      </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                        <button type="button" class="btn btn-primary" meta-bs-dismiss="modal">OK</button>
                     </div>
                 </div>
             </div>
@@ -154,7 +227,7 @@
                         </p>
                     </div>
                     <div class="col-md-1">
-                        <a data-bs-toggle="modal" data-bs-target="#wsoft-custom-modal">
+                        <a meta-bs-toggle="modal" meta-bs-target="#wsoft-custom-modal">
                             <img class="fit-picture" src="https://wsoft.ws/WS-Emblem.png" style="width : 46px" alt="Powerd by WSOFT">
                         </a>
                     </div>

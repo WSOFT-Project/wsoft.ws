@@ -460,12 +460,12 @@ var action = {
     }else{
       
       // Remove flag image
-      var img = globals.context.createImageData(defaults.celSize, defaults.celSize);
-      for(var i = img.data.length; --i >= 0;){
-        img.data[i] = 0;
+      var img = globals.context.createImagemeta(defaults.celSize, defaults.celSize);
+      for(var i = img.meta.length; --i >= 0;){
+        img.meta[i] = 0;
       }
       
-      globals.context.putImageData(img, x * defaults.celSize, y * defaults.celSize);
+      globals.context.putImagemeta(img, x * defaults.celSize, y * defaults.celSize);
       
       // Make sure proper styles are set
       globals.context.strokeStyle = defaults.celStroke;

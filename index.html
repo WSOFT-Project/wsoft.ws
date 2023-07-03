@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <common class="head"></common>
-    <title>WSOFT</title>
+    <common class="head">
+      <meta name="title">WSOFT</meta>
+    </common>
 </head>
 <body>
   <common class="header"/>
@@ -17,14 +18,14 @@
           <script>
             document.getElementById("nav-home").classList.add("active");
           </script>
-            <div id="carousel-slider" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div id="carousel-slider" class="carousel carousel-dark slide" meta-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carousel-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carousel-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carousel-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" meta-bs-target="#carousel-slider" meta-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" meta-bs-target="#carousel-slider" meta-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" meta-bs-target="#carousel-slider" meta-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="3000">
+                  <div class="carousel-item active" meta-bs-interval="3000">
                     <a href="https://docs.wsoft.ws/websailing/">
                     <img src="products/WebSailing.svg" class="d-block w-100 img-white" alt="WebSailing NX">
                     <div class="carousel-caption d-none d-md-block">
@@ -33,7 +34,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="carousel-item" data-bs-interval="3000">
+                  <div class="carousel-item" meta-bs-interval="3000">
                     <a href="https://docs.wsoft.ws/products/alice/">
                     <img src="products/AliceScript.svg" class="d-block w-100" alt="AliceScript">
                     <div class="carousel-caption d-none d-md-block img-white">
@@ -42,7 +43,7 @@
                     </div>
                   </a>
                   </div>
-                  <div class="carousel-item" data-bs-interval="3000">
+                  <div class="carousel-item" meta-bs-interval="3000">
                     <a href="https://github.com/WSOFT-Project/WSOFTConfig">
                     <img src="products/WSOFTConfig.svg" class="d-block w-100 img-white" alt="WSOFTConfig" >
                     <div class="carousel-caption d-none d-md-block">
@@ -137,65 +138,29 @@
               <h1>News</h1>
               <hr/>
               <!-- Newsカード -->
-              <div class="card mb-3">
-                <a href="#" class="row g-0 text-reset text-decoration-none">
-                  <div class="col-md-3 d-flex justify-content-center">
-                    <i class="bi bi-tree-fill" style="font-size: 700%;"></i>
-                  </div>
-                  <div class="col-md">
-                    <div class="card-body">
-                      <h5 class="card-title">WSOFTと環境保護</h5>
-                      <div class="card-text">
-                         <p>
-                          WSOFTのホームページはCloudflare Pagesを用いて配信しています。そのため、サイトをホストしているサーバーの電力によって排出される二酸化炭素は相殺されています。
-                        </p>
-                      </div>
-                      <p class="card-text"><small class="text-muted">2023/2/14</small></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="card mb-3">
-                <a href="https://docs.wsoft.ws/websailing/changelog/1103/" class="row g-0 text-reset text-decoration-none">
-                  <div class="col-md-3 d-flex justify-content-center">
-                    <img src="products/WebSailing.svg" width="100%" height="100%" alt="WebSailing">
-                  </div>
-                  <div class="col-md">
-                    <div class="card-body">
-                      <h5 class="card-title">WebSailingNX 110.3リリース</h5>
-                      <div class="card-text">
-                        <p>
-                          AliceScript2.2に対応し、最新のセキュリティ更新を適用しました。</p>
-                        <p>
-                          このリリースは、Chromium110に準拠しています。
-                        </p>
-                      </div>
-                      <p class="card-text"><small class="text-muted">2023/3/5</small></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Newsカード（画像付き） -->
-              <div class="card mb-3">
-                <a href="
-                https://docs.wsoft.ws/products/alice/changelog/2-2/" class="row g-0 text-reset text-decoration-none">
-                  <div class="col-md-3 d-flex justify-content-center">
-                    <img src="products/AliceScript.svg" width="100%" height="100%" alt="WebSailing">
-                  </div>
-                  <div class="col-md">
-                    <div class="card-body">
-                      <h5 class="card-title">AliceScript/Sister 2.2.1 リリース</h5>
-                      <div class="card-text">
-                        <p>
-                            AliceScript2.2では、配列に対して高度な処理が簡単に行えるようになりました。また、処理前にインタプリタに指令する、前処理指令を導入しました。
-                        </p>
-                       
-                      </div>
-                      <p class="card-text"><small class="text-muted">2023/3/5</small></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
+              <common class="news-card-icon">
+                <meta name="title">WSOFTと環境保護</meta>
+                <meta name="description">WSOFTのホームページはCloudflare Pagesを用いて配信しています。そのため、サイトをホストしているサーバーの電力によって排出される二酸化炭素は相殺されています。</meta>
+                <meta name="icon">bi-tree-fill</meta>
+                <meta name="date">2023/2/14</meta>
+                <meta name="href">#</meta>
+              </common>
+              
+              <common class="news-card-image">
+                <meta name="title">WebSailingNX 110.3リリース</meta>
+                <meta name="description">AliceScript2.2に対応し、最新のセキュリティ更新を適用しました。このリリースは、Chromium110に準拠しています。</meta>
+                <meta name="src">products/WebSailing.svg</meta>
+                <meta name="date">2023/3/5</meta>
+                <meta name="href">https://docs.wsoft.ws/websailing/changelog/1103/</meta>
+              </common>
+
+              <common class="news-card-image">
+                <meta name="title">AliceScript/Sister 2.2.1 リリース</meta>
+                <meta name="description">AliceScript2.2では、配列に対して高度な処理が簡単に行えるようになりました。また、処理前にインタプリタに指令する、前処理指令を導入しました。</meta>
+                <meta name="src">products/AliceScript.svg</meta>
+                <meta name="date">2023/3/5</meta>
+                <meta name="href">https://docs.wsoft.ws/products/alice/changelog/2-2/</meta>
+              </common>
               
               <br/>
         </main>
