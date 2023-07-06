@@ -194,7 +194,7 @@
                                      alt="WSOFTロゴ" /> WSOFTについて
                         </h5>
         
-                        <button type="button" class="btn-close" meta-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                      <p>Copyright &copy; 2017 WSOFT All Rights Reserved.</p>
@@ -202,9 +202,12 @@
                             WSOFTはこのサイトでの頒布にあたって、WSOFT以外のコンテンツに対して所有権を主張しない上、何ら追加のライセンスも付与しません。
                             WSOFT以外のコンテンツの著作権等は、それぞれの権利保有者に帰属します。詳しくは<a href="https://docs.wsoft.ws/legal/">法的資料</a>を参照してください。
                      </p>
+                     <hr/>
+                     <p>WSOFTのサイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。これはデータの収集のためにCookieを使用していますが、データは匿名で収集されており、個人を特定するものではありません。
+                        この機能はCookieを無効にすることで収集を拒否できますので、お使いのブラウザの設定をご確認ください。詳しく知るには<a href="https://docs.wsoft.ws/legal/privacy-policy">プライバシーポリシー</a>を参照してください。</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" meta-bs-dismiss="modal">OK</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
                     </div>
                 </div>
             </div>
@@ -227,9 +230,9 @@
                         </p>
                     </div>
                     <div class="col-md-1">
-                        <a meta-bs-toggle="modal" meta-bs-target="#wsoft-custom-modal">
-                            <img class="fit-picture" src="https://wsoft.ws/WS-Emblem.png" style="width : 46px" alt="Powerd by WSOFT">
-                        </a>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#wsoft-custom-modal">
+                            <img class="fit-picture" src="https://wsoft.ws/WS-Emblem.png" style="width : 46px" alt="Powerd by WSOFT"/>
+                      </button>
                     </div>
                 </div>
             </div>
