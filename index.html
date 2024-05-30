@@ -1,88 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="模型部の手下となりしプログラマー、たいと愉快な仲間たちの同人サークル。ソフト開発や動画制作をしたりしている。">
-    <link rel="icon" href="https://wsoft.ws/favicon.svg" type="image/svg+xml">
-    <link rel="icon alternate" href="https://wsoft.ws/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css" rel="stylesheet">
+    <link href="https://wsoft.ws/site.css"  rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <style>
-      .dropdown:hover>.dropdown-menu {
-  display: block;
-      }
-    </style>
-    <title>WSOFT</title>
-    <meta name="description" content="模型部の手下となりしプログラマー、たいと愉快な仲間たちの同人サークル。ソフト開発や動画制作をしたりしている。" >
-    <!-- ogp -->
-    <meta property="og:site_name" content="WSOFT" />
-    <meta property="og:url" content="https://wsoft.ws" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="WSOFT" />
-    <meta property="og:description" content="模型部の手下となりしプログラマー、たいと愉快な仲間たちの同人サークル。ソフト開発や動画制作をしたりしている。" />
-    <meta property="og:image" content="favicon.svg" />
-    <meta property="og:locale" content="ja_JP" />
-    <!-- <meta property="fb:app_id" content="AppID"> -->
-    <meta name="twitter:card" content="favicon.svg" />
-    <meta name="twitter:site" content="@WSOFT7" />
-    <meta name="twitter:description" content="模型部の手下となりしプログラマー、たいと愉快な仲間たちの同人サークル。ソフト開発や動画制作をしたりしている。" />
-    <meta name="twitter:image:src" content="favicon.svg" />
-    
+
+    <common class="head">
+      <meta name="title">WSOFT</meta>
+    </common>
 </head>
 <body>
-  
+  <common class="header"/>
     <div class="container">
         <main role="main" class="pb-3">
-          <common vendor="wsoft" type="header"/>
-          <script src="main.js"></script>
           <script>
             document.getElementById("nav-home").classList.add("active");
           </script>
-            <div id="carousel-slider" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carousel-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carousel-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carousel-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+           <div id="carousel-slider" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <a href="https://docs.wsoft.ws/websailing/">
+                <img src="products/WebSailing.svg" class="d-block w-100 img-white" alt="WebSailing NX">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>WebSailing <span style="color:#02a0e5">NX</span></h3>
+                  <p>Chromiumベース。昔ながらのUI。それでいて強力。</p>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="3000">
-                    <a href="websailing/">
-                    <img src="products/WebSailing-4.svg" class="d-block w-100" alt="WebSailing NX">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h3>WebSailing 4</h3>
-                      <p>WebSailingシリーズはリリースから4周年を迎えました</p>
-                    </div>
-                  </a>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="3000">
-                    <a href="https://alice.wsoft.ws/">
-                    <img src="products/AliceScript.svg" class="d-block w-100" alt="AliceScript">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h3>AliceScript</h3>
-                      <p>.NET上で動作する汎用性のあるスクリプト言語</p>
-                    </div>
-                  </a>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="3000">
-                    <a href="https://github.com/WSOFT-Project/WSOFTConfig">
-                    <img src="products/WSOFTConfig.svg" class="d-block w-100" alt="WSOFTConfig" >
-                    <div class="carousel-caption d-none d-md-block">
-                      <h3>WSOFTConfig</h3>
-                      <p>.NETから簡単に利用できる設定ファイル（*.wsconf）を読み書きするためのライブラリ</p>
-                    </div>
-                  </a>
-                  </div>
-                </div>
+              </a>
               </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <a href="https://docs.wsoft.ws/products/alice/">
+                <img src="products/AliceScript.svg" class="d-block w-100" alt="AliceScript">
+                <div class="carousel-caption d-none d-md-block img-white">
+                  <h3>AliceScript</h3>
+                  <p>プログラミングをはじめよう。Windowsでも、Linuxでも、Macでも。</p>
+                </div>
+              </a>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <a href="https://github.com/WSOFT-Project/WSOFTConfig">
+                <img src="products/WSOFTConfig.svg" class="d-block w-100 img-white" alt="WSOFTConfig" >
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>WSOFTConfig</h3>
+                  <p>.NETから簡単に利用できる設定ファイル（*.wsconf）を読み書きするためのライブラリ</p>
+                </div>
+              </a>
+              </div>
+            </div>
+          </div>
               <h1>Works</h1>
               <hr/>
               <div id="works" class="container">
                 <div class="row">
                     <div class="card col-sm-6 col-md-4 col-xl-3">
-                      <a href="websailing/" class="row g-0 text-reset text-decoration-none">
-                        <img src="products/WebSailing.svg" class="card-img-top" alt="" loading="lazy">
+                      <a href="https://docs.wsoft.ws/websailing/" class="row g-0 text-reset text-decoration-none">
+                        <img src="products/WebSailing.svg" class="card-img-top img-white" alt="" loading="lazy">
                         <div class="card-body">
                           <h5 class="card-title">WebSailing <span style="color:#02a0e5">NX</span></h5>
                           <p class="card-text">Chromiumをベースとしつつ昔ながらのUIに新しいものを加えて親しみやすくしたブラウザです。C#でのネイティブプラグイン開発に対応しており、ブラウザに対して柔軟な操作が可能です。</p>
@@ -90,8 +68,8 @@
                       </a>
                     </div>
                     <div class="card col-sm-6 col-md-4 col-xl-3">
-                      <a href="https://alice.wsoft.ws/" class="row g-0 text-reset text-decoration-none">
-                        <img src="products/AliceScript.svg" class="card-img-top" alt="" loading="lazy">
+                      <a href="https://docs.wsoft.ws/products/alice" class="row g-0 text-reset text-decoration-none">
+                        <img src="products/AliceScript.svg" class="card-img-top img-white" alt="" loading="lazy">
                         <div class="card-body">
                           <h5 class="card-title">AliceScript</h5>
                           <p class="card-text">.NET上で動作する汎用性のあるスクリプト言語です。AliceScriptを使用すると簡単にアプリケーションを構築できます。AliceScriptはC#やPythonをルーツとしています。</p>
@@ -100,7 +78,7 @@
                     </div>
                     <div class="card col-sm-6 col-md-4 col-xl-3">
                       <a href="https://github.com/WSOFT-Project/WSOFTConfig" class="row g-0 text-reset text-decoration-none">
-                        <img src="products/WSOFTConfig.svg" class="card-img-top" alt="" loading="lazy">
+                        <img src="products/WSOFTConfig.svg" class="card-img-top img-white" alt="" loading="lazy">
                         <div class="card-body">
                           <h5 class="card-title">WSOFTConfig</h5>
                           <p class="card-text">.NETから簡単に利用できる設定ファイル（*.wsconf）を読み書きするためのライブラリです。.NETの基本的なデータ型に対応しつつ、XMLのような階層構造を持つことを目標としています。</p>
@@ -109,34 +87,34 @@
                     </div>
                     <div class="card col-sm-6 col-md-4 col-xl-3">
                       <a href="https://lantana.wsoft.ws/" class="row g-0 text-reset text-decoration-none">
-                        <img src="products/lantana.png" class="card-img-top" alt="" loading="lazy">
+                        <img src="products/lantana.png" class="card-img-top img-white" alt="" loading="lazy">
                         <div class="card-body">
                           <h5 class="card-title">Lantana</h5>
-                          <p class="card-text">Lantana は、シンプルで軽量なMKDocsのテーマです。HTMLの知識がなくても簡単にサイトを作成できます。Lantanaは、WSOFT Docsのために開発されました。</p>
+                          <p class="card-text">Lantanaは、シンプルで軽量なMKDocsのテーマです。HTMLの知識がなくても簡単にサイトを作成できます。Lantanaは、WSOFT Docsのために開発されました。</p>
                         </div>
                       </a>
                     </div>
                     <div class="card col-sm-6 col-md-4 col-xl-3">
                       <a href="https://a.wsoft.ws/alice/me" class="row g-0 text-reset text-decoration-none">
-                        <img src="products/Alice.jpg" class="card-img-top" alt="" loading="lazy">
+                        <img src="products/Alice.jpg" class="card-img-top img-white" alt="" loading="lazy">
                         <div class="card-body">
                           <h5 class="card-title">Alice</h5>
                           <p class="card-text">AliceScript及びAliceProjectのマスコットキャラクター兼公式アンバサダーです。見た目は世間一般でよく言われる健全で明るい美少女（?）のようです。</p>
                         </div>
                       </a>
                     </div>
-                    <div class="card d-none d-md-block col-sm-6 col-md-4 col-xl-3">
-                      <a href="https://a.wsoft.ws/script/eol" class="row g-0 text-reset text-decoration-none">
-                        <img src="products/WSOFTScript.png" class="card-img-top" alt="" loading="lazy">
+                     <div class="card col-sm-6 col-md-4 col-xl-3">
+                      <a href="https://studiosync.wsoft.ws" class="row g-0 text-reset text-decoration-none">
+                        <img src="https://studiosync.wsoft.ws/icon-192.png" class="card-img-top img-white" alt="" loading="lazy">
                         <div class="card-body">
-                          <h5 class="card-title">WSOFTScript</h5>
-                          <p class="card-text">WSOFTの簡単・便利・軽量なスクリプト言語です。WSOFTScriptの開発およびサポートは終了しました。<br/>現在は、AliceScriptへの移行に関する情報を提供しています。</p>
+                          <h5 class="card-title">StudioSync</h5>
+                          <p class="card-text">小規模レコーディングスタジオでも、息をあわせてシンクロできます。StudioSyncは、タイマー機能やチャット機能、台本共有機能を提供します。</p>
                         </div>
                       </a>
                     </div>
                     <div class="card d-none d-xl-block col-sm-6 col-md-4 col-xl-3">
-                      <a href="https://websailing.localinfo.jp/" class="row g-0 text-reset text-decoration-none">
-                        <img src="products/WebSailing-GL.svg" class="card-img-top" alt="" loading="lazy">
+                      <a href="https://docs.wsoft.ws/products/websailing/gl/" class="row g-0 text-reset text-decoration-none">
+                        <img src="products/WebSailing-GL.svg" class="card-img-top img-white" alt="" loading="lazy">
                         <div class="card-body">
                           <h5 class="card-title">WebSailing（GL）</h5>
                           <p class="card-text">ブラウザエンジンにTridentを採用した、いわゆるIEコンポーネントブラウザです。InternetExplorerのサポート終了に伴い、すべてのバージョンのサポートは終了しました。</p>
@@ -144,8 +122,8 @@
                       </a>
                     </div>
                     <div class="card d-none d-xl-block col-sm-6 col-md-4 col-xl-3">
-                      <a href="https://amiuha2103.amebaownd.com/" class="row g-0 text-reset text-decoration-none">
-                        <img src="products/Amiuha.png" class="card-img-top" alt="" loading="lazy">
+                      <a href="https://docs.wsoft.ws/amiuha/" class="row g-0 text-reset text-decoration-none">
+                        <img src="products/Amiuha.png" class="card-img-top img-white" alt="" loading="lazy">
                         <div class="card-body">
                           <h5 class="card-title">あみうは</h5>
                           <p class="card-text">ライフハックからガジェットまでさまざまなことをつぶやくブログでした。すでにあみうはは解散しており、記事の更新は停止しています。</p>
@@ -159,73 +137,39 @@
               <br/>
               <h1>News</h1>
               <hr/>
+              <!-- Newsカード -->
+
+              <common class="news-card-image">
+                <meta name="title">WebSailingNX 123リリース</meta>
+                <meta name="description">Alice3.0の新機能を導入しました。この更新にはセキュリティ更新を含みます。</meta>
+                <meta name="src">products/WebSailing.svg</meta>
+                <meta name="date">2024/3/31</meta>
+                <meta name="href">https://docs.wsoft.ws/websailing/changelog/1230/</meta>
+              </common>
+
+              <common class="news-card-image">
+                <meta name="title">AliceScript 3.0 リリース</meta>
+                <meta name="description">開発効率、相互運用性、パフォーマンスが飛躍的に向上しました。</meta>
+                <meta name="src">products/AliceScript.svg</meta>
+                <meta name="date">2023/12/25</meta>
+                <meta name="href">https://docs.wsoft.ws/products/alice/changelog/3-0/</meta>
+              </common>
+
+              <common class="news-card-image">
+                <meta name="title">AliceScript 開発中</meta>
+                <meta name="description">Losettaのリポジトリにアクセスして最新のAliceScriptを試したり、新機能を提案してみませんか。</meta>
+                <meta name="src">products/AliceScript.svg</meta>
+                <meta name="date">2023/10/29</meta>
+                <meta name="href">https://github.com/WSOFT-Project/Losetta/</meta>
+              </common>
               
-              <!-- Newsカード（画像付き） -->
-              <div class="card mb-3">
-                <a href="https://docs.wsoft.ws/websailing/changelog/1070/" class="row g-0 text-reset text-decoration-none">
-                  <div class="col-md-3 d-flex justify-content-center">
-                    <img src="products/WebSailing.svg" width="100%" height="100%" alt="WebSailing">
-                  </div>
-                  <div class="col-md">
-                    <div class="card-body">
-                      <h5 class="card-title">WebSailingNX 107 リリース</h5>
-                      <div class="card-text">
-                        <p>
-                         WebSailingをHTMLexe化プラットフォームとして使用できるよう、カスタムWebSailingの作成をサポートしたほか、いくつかの重大な脆弱性の修正を行いました。</p>
-                        <p>
-                          このリリースは、Chromium107に準拠しています。
-                        </p>
-                      </div>
-                      <p class="card-text"><small class="text-muted">2022/10/17</small></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Newsカード -->
-              <div class="card mb-3">
-                <a href="https://docs.wsoft.ws/blog/introducing-wsoft-docs/" class="row g-0 text-reset text-decoration-none">
-                  <div class="col-md-3 d-flex justify-content-center">
-                    <i class="bi bi-newspaper" style="font-size: 700%;"></i>
-                  </div>
-                  <div class="col-md">
-                    <div class="card-body">
-                      <h5 class="card-title">WSOFTDocsへようこそ</h5>
-                      <div class="card-text">
-                        <p>WSOFTの新しいサイトであるWSOFTDocsを公開しました。このサイトでは、WSOFTの様々な製品に役立つ情報を提供します。</p>
-                        <p>
-                          すでに「あみうは」、「AliceScriptWiki」、「WebSailing」、「WSOFTScript」などの記事の一部または全部が、WSOFTDocsへ移動しています。
-                        </p>
-                      </div>
-                      <p class="card-text"><small class="text-muted">2022/11/1</small></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Newsカード -->
-              <div class="card mb-3">
-                <a href="#" class="row g-0 text-reset text-decoration-none">
-                  <div class="col-md-3 d-flex justify-content-center">
-                    <i class="bi bi-newspaper" style="font-size: 700%;"></i>
-                  </div>
-                  <div class="col-md">
-                    <div class="card-body">
-                      <h5 class="card-title">WSOFT サイトリニューアル</h5>
-                      <div class="card-text">
-                        <p>
-                          WSOFTのサイトをリニューアルしました。このサイトでは、私たちの成果物や連絡先などを紹介しています。</p>
-                        <p>
-                          また、ドメインをwsoft.gqからwsoft.wsに移行しました。
-                        </p>
-                      </div>
-                      <p class="card-text"><small class="text-muted">2022/10/3</small></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
               <br/>
+              <p class="text-end"><a href="https://github.com/WSOFT-Project/wsoft.ws" class="text-decoration-none text-muted"><i class="bi bi-github"></i>&nbsp;GitHubでサイトの編集を提案</a></p>
         </main>
         <br/>
     </div>
    
+    <common class="footer"/>
+    <common class="modal"/>
     </body>
 </html>

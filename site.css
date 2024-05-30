@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    a{
+        color:385898;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    a{
+        color:0066CC;
+    }
+  }

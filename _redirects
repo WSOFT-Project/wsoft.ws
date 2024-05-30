@@ -1,0 +1,23 @@
+/About https://wsoft.ws/about
+/Contact https://wsoft.ws/contact
+/Sitemap https://wsoft.ws/sitemap
+/Works https://wsoft.ws/works
+
+/About/* https://wsoft.ws/about/:splat
+/Contact https://wsoft.ws/contact/:splat
+/Sitemap https://wsoft.ws/sitemap/:splat
+/Works https://wsoft.ws/works/:splat
+/icon-maker/* https://docs.wsoft.ws/products/icon-maker/:splat
+/websailing/* https://docs.wsoft.ws/products/websailing/:splat
+
+/legal/docs-termsofuse /legal/site-terms 301
+/legal/dc-termsofuse /legal/site-terms 301
+/tokoyami/ https://web.archive.org/web/20240406061501/https://docs.wsoft.ws/tokoyami/3/ 301
+/products/websailing/changelog /websailing/changelog/1180 301
+/products/websailing/gl/changelog /websailing/gl/changelog/4000 301
+/products/alice/general/expression/ /products/alice/general/operators/ 301
+
+/websailing/* /products/websailing/:splat
+/alice/* /products/alice/:splat
+/script/* /products/script/:splat
+/download/* /products/download/:splat
